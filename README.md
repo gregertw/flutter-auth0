@@ -10,6 +10,9 @@ Note: This plugin is still under development, and some APIs might not be availab
     <img src="screenshots/flutter_03.png" alt="screen_02" height="300" />
 </div>
 
+## Example app in this project
+In the example/ folder, you will find a test application. See README.md there.
+
 ## Authentication API
 ### Usage
 To use this plugin, add `flutter_auth0` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).

@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_auth0/flutter_auth0.dart';
 
-final String clientId = 'your-client-id';
-final String domain = 'your-domain';
+final String clientId = 't_H_DVN6E3Mumz9-2U_AqkgDBpXkCea_';
+final String domain = 'actingweb.eu.auth0.com';
 
 final Auth0 auth = new Auth0(clientId: clientId, domain: domain);
 final WebAuth web = new WebAuth(clientId: clientId, domain: domain);
@@ -49,7 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
           waitResponse: true);
       return '''[Sign-Up Success] 
     User Id: ${user['_id']}''';
-    } catch (e) {
+    } 
+    on NullThrownError {
+      return 'Unknown error, user may already exist';
+    }
+    catch (e) {
       return e;
     }
   }
