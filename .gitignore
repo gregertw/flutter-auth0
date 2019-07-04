@@ -383,3 +383,6 @@ xcuserdata
 # End of https://www.gitignore.io/api/android,dart,flutter,macos,visualstudiocode,xcode,jetbrains,swift,swiftpackagemanager
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
+.vscode/launch.json
+.idea/encodings.xml
+.idea/misc.xml
